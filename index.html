@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter</title>
   </head>
-  <body>
-    <h1>hallo welt</h1>
-	<p>was ich mag <a href="quiz.html">zum Quiz</a></p>
+  <body style="background-color: gray">
+    <h1>Hier findet man das Quiz</h1>
+	<p><a href="quiz.html">zum Quiz</a></p>
 	<ul>
 		<li>Essen
 			<ul>
@@ -24,6 +24,18 @@
 			</ul>
 		</li>
 	</ul>
+	<button onclick="aendereHintergrund('red');">Hintergrund Rot</button>
+	<button onclick="aendereHintergrund('blue');">Hintergrund Blau</button>
+	<button onclick="aendereHintergrund('green');">Hintergrund Grün</button>
+	<button onclick="aendereHintergrund('gray');">Hintergrund Grau</button>
+	<button onclick="aendereHintergrund('yellow');">Hintergrund Gelb</button>
+	<button onclick="aendereHintergrund('black');">Hintergrund Schwarz</button>
+	<button onclick="aendereHintergrund('white');">Hintergrund Weiß</button>
+	<script>
+		function aendereHintergrund(color) {
+			 document.body.style.backgroundColor = color; 
+		}
+	</script>
   </body>
 </html>
 
